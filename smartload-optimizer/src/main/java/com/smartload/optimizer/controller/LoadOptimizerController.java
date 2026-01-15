@@ -30,4 +30,10 @@ public class LoadOptimizerController {
 
         return ResponseEntity.ok(service.optimize(request));
     }
+    
+    @GetMapping("/health")
+    public String health() {
+        return "OK";
+    }
+
 }
